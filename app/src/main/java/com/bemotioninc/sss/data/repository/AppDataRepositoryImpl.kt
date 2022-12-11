@@ -30,7 +30,6 @@ class AppDataRepositoryImpl @Inject constructor(
                 val appCaching = offlineDataSource.getAppCaching().first()
                 appCaching.primaryColor = it.data!!.officer.primaryColor
                 offlineDataSource.saveAppCaching(appCaching)
-                //emit(ResponseState.Success(cacheMapper.map(it.data!!)))
                 emit(ResponseState.Success(it.data!!))
             }.onFailure {
                 emit(ResponseState.Failure(it.mapToError()))

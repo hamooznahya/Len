@@ -7,13 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bemotioninc.sss.MainActivity
 import com.bemotioninc.sss.constants.Constants
 import com.bemotioninc.sss.databinding.ActivitySplashBinding
+import com.bemotioninc.sss.presentation.base.BaseActivity
 import com.bemotioninc.sss.utils.ResponseState
 import com.bemotioninc.sss.utils.observeInLifecycle
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.onEach
 
 @AndroidEntryPoint
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity() {
 
 
     private lateinit var binding: ActivitySplashBinding
@@ -39,9 +40,8 @@ class SplashActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 is ResponseState.Failure -> {
-//                    handleError(it.error) {
-//                        onLoginClicked()
-//                    }
+                    handleError(it.error) {
+                    }
                     //     Log.d("AnyAny", it.error.toString())
                 }
                 is ResponseState.Loading -> {
@@ -68,9 +68,9 @@ class SplashActivity : AppCompatActivity() {
 
                 }
                 is ResponseState.Failure -> {
-//                    handleError(it.error) {
-//                        onLoginClicked()
-//                    }
+                    handleError(it.error) {
+
+                    }
                     //     Log.d("AnyAny", it.error.toString())
                 }
                 is ResponseState.Loading -> {

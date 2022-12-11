@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "1052847556644",
+    "firebase_url": "https://sss-bemotion-default-rtdb.firebaseio.com",
+    "project_id": "sss-bemotion",
+    "storage_bucket": "sss-bemotion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052847556644:android:7fe9d4a3c8838853f5f0b1",
+        "android_client_info": {
+          "package_name": "com.bemotioninc.sss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052847556644-891rb900dvta3qfdi80jr466hstq76sf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bemotioninc.sss",
+            "certificate_hash": "f0fc1cf2380a3a78aff710269bcfc80e3ae2bf98"
+          }
+        },
+        {
+          "client_id": "1052847556644-fkftgra2r59ub7s1m3id6vtfk8ha5n4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bemotioninc.sss",
+            "certificate_hash": "5a9026f208654917c29c20edfde1324a2b1b4efb"
+          }
+        },
+        {
+          "client_id": "1052847556644-isfcnf4u80j8fmiphm8cgm28n0uot970.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bemotioninc.sss",
+            "certificate_hash": "0a618968c95edcc444afc9f519f0b6586d1b0aa0"
+          }
+        },
+        {
+          "client_id": "1052847556644-kvfc4p4k6en4usatvctmhqoi269ocapi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bemotioninc.sss",
+            "certificate_hash": "64b037c8c9d4d3bd84388afdfa08b3fc730133a7"
+          }
+        },
+        {
+          "client_id": "1052847556644-ogcm84o4bf8vtuddcb7bdjko69ula34l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bemotioninc.sss",
+            "certificate_hash": "9c9951e4cd4156e33f246ca5fc684abb55502e0b"
+          }
+        },
+        {
+          "client_id": "1052847556644-vgb6a12pk0mqpt4a70t71vu63emflva9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bemotioninc.sss",
+            "certificate_hash": "4d075552c2de92031cf98922dba697b2aa35a98e"
+          }
+        },
+        {
+          "client_id": "1052847556644-gi69ht02626q6mp7dp41oeb4rrk0rk55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD22v5uz5R-WEcEEBXm4WeyZOvoywTPVWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052847556644-gi69ht02626q6mp7dp41oeb4rrk0rk55.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1052847556644-r56ah9uj5pgna8v7oq7kn93mk24auv7v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bemotioninc.SSS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,40 @@
+
+buildscript {
+    ext.gson = "2.8.9"
+    ext.retrofit = "2.9.0"
+    ext.nav_version = "2.4.1"
+    ext.coroutines = "1.5.2"
+    ext.dagger_hilt = "2.42"
+    ext.lifecycle_version = '2.4.0'
+    ext.lifecycle_version = "2.5.0-beta01"
+    ext.arch_version = "2.1.0"
+
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.4"
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10'
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.39.1'
+        classpath 'com.google.gms:google-services:4.3.14'
+        classpath 'com.google.firebase:perf-plugin:1.4.1'
+
+        // Add the dependency for the Crashlytics Gradle plugin
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2'
+        def nav_version = "2.3.5"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+
+
+
+    }
+
+}
+
+
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -25,22 +25,10 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //viewModel.getCache(Constants.Platforms.AndroidForBackEnd, "1")
         viewModel.getLanguages()
         getObserve()
     }
 
-/*    private fun handleApis() {
-        if (userData != null) {
-            if (userData.selectedLanguageID != null) {
-                viewModel.getCache(Constants.Platforms.AndroidForBackEnd, "1")
-            } else {
-                getLanguages()
-            }
-        } else {
-            getLanguages()
-        }
-    }*/
 
 
     private fun getObserve() {

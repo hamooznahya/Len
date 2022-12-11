@@ -2,7 +2,7 @@ package com.bemotioninc.sss.data.dto.cachingmodules
 
 import com.google.gson.annotations.SerializedName
 
-data class Officer(
+data class OfficerResponse(
     @SerializedName("radius")
     var radius :Float ,
 

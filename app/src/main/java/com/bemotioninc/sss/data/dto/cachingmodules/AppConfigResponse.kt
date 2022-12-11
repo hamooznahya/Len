@@ -2,7 +2,7 @@ package com.bemotioninc.sss.data.dto.cachingmodules
 
 import com.google.gson.annotations.SerializedName
 
-data class AppConfig(
+data class AppConfigResponse(
     @SerializedName("appName")
     var appName: String,
 

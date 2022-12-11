@@ -1,12 +1,11 @@
 
 buildscript {
-    ext.gson = "2.8.9"
+    ext.gson = "2.9.0"
     ext.retrofit = "2.9.0"
     ext.nav_version = "2.4.1"
-    ext.coroutines = "1.5.2"
+    ext.coroutines = "1.6.4"
     ext.dagger_hilt = "2.42"
-    ext.lifecycle_version = '2.4.0'
-    ext.lifecycle_version = "2.5.0-beta01"
+    ext.lifecycle_version = "2.6.0-alpha03"
     ext.arch_version = "2.1.0"
 
     repositories {
@@ -16,10 +15,10 @@ buildscript {
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.4"
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.20'
         classpath 'com.google.dagger:hilt-android-gradle-plugin:2.39.1'
         classpath 'com.google.gms:google-services:4.3.14'
-        classpath 'com.google.firebase:perf-plugin:1.4.1'
+        classpath 'com.google.firebase:perf-plugin:1.4.2'
 
         // Add the dependency for the Crashlytics Gradle plugin
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2'

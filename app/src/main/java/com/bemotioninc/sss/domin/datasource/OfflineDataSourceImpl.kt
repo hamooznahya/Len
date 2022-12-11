@@ -20,16 +20,14 @@ class OfflineDataSourceImpl (private val appPreferencesStore: DataStore<Preferen
 
     override suspend fun saveAppCaching(appCaching: AppCaching) {
         appPreferencesStore.edit { preferences ->
-            preferences[primaryColor] = appCaching.primaryColor
-
-
+            preferences[primaryColor] = appCaching.primaryColor!!
         }
     }
 
     override fun getAppCaching(): Flow<AppCaching> {
         return appPreferencesStore.data.map { preferences ->
             AppCaching(
-                primaryColor = preferences[primaryColor] ?: "#000",
+                primaryColor = preferences[primaryColor] ?: "#000000",
 
             )
         }

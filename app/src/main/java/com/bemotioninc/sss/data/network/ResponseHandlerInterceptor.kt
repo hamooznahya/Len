@@ -1,6 +1,7 @@
 package com.bemotioninc.sss.data.network
 
 
+import android.annotation.SuppressLint
 import com.bemotioninc.sss.data.dto.BaseResponse
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
@@ -17,6 +18,7 @@ internal class ResponseHandlerInterceptor : Interceptor {
         gsonBuilder.setLenient()
         return gsonBuilder.create()
     }
+    @SuppressLint("SuspiciousIndentation")
     override fun intercept(chain: Interceptor.Chain): Response {
         val request: Request = chain.request()
         val response = chain.proceed(request)

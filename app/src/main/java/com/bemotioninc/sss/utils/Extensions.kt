@@ -16,45 +16,45 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 
-
-fun ImageView.showImageWhenLoaded(
-    url: String
-) {
-    val context = this.context
-    val requestManager = Glide.with(context).load(url)
-    this@showImageWhenLoaded.gone()
-    requestManager.addListener(object : RequestListener<Drawable> {
-        override fun onLoadFailed(
-            e: GlideException?,
-            model: Any?,
-            target: Target<Drawable>?,
-            isFirstResource: Boolean
-        ): Boolean {
-            this@showImageWhenLoaded.gone()
-            return true
-        }
-
-        override fun onResourceReady(
-            resource: Drawable?,
-            model: Any?,
-            target: Target<Drawable>?,
-            dataSource: DataSource?,
-            isFirstResource: Boolean
-        ): Boolean {
-            this@showImageWhenLoaded.visible()
-            this@showImageWhenLoaded.setImageDrawable(resource)
-            return true
-        }
-
-    }).submit()
-}
-
-
-fun TextView.setTextOrGone(text: String?) {
-    if (text.isNullOrEmpty())
-        this.gone()
-    this.text = text
-}
+//
+//fun ImageView.showImageWhenLoaded(
+//    url: String
+//) {
+//    val context = this.context
+//    val requestManager = Glide.with(context).load(url)
+//    this@showImageWhenLoaded.gone()
+//    requestManager.addListener(object : RequestListener<Drawable> {
+//        override fun onLoadFailed(
+//            e: GlideException?,
+//            model: Any?,
+//            target: Target<Drawable>?,
+//            isFirstResource: Boolean
+//        ): Boolean {
+//            this@showImageWhenLoaded.gone()
+//            return true
+//        }
+//
+//        override fun onResourceReady(
+//            resource: Drawable?,
+//            model: Any?,
+//            target: Target<Drawable>?,
+//            dataSource: DataSource?,
+//            isFirstResource: Boolean
+//        ): Boolean {
+//            this@showImageWhenLoaded.visible()
+//            this@showImageWhenLoaded.setImageDrawable(resource)
+//            return true
+//        }
+//
+//    }).submit()
+//}
+//
+//
+//fun TextView.setTextOrGone(text: String?) {
+//    if (text.isNullOrEmpty())
+//        this.gone()
+//    this.text = text
+//}
 
 
 /**

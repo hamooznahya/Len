@@ -4,7 +4,6 @@ import com.bemotioninc.sss.data.datasource.OfflineDataSource
 import com.bemotioninc.sss.data.datasource.RemoteDataSource
 import com.bemotioninc.sss.data.dto.cachingmodules.CachingResponse
 import com.bemotioninc.sss.data.dto.cachingmodules.LanguagesResponse
-import com.bemotioninc.sss.domin.mappers.CacheMappers
 import com.bemotioninc.sss.domin.repository.AppDataRepository
 import com.bemotioninc.sss.utils.ResponseState
 import com.bemotioninc.sss.utils.mapToError
@@ -17,8 +16,8 @@ import javax.inject.Inject
 
 class AppDataRepositoryImpl @Inject constructor(
     private val remoteDataSource: RemoteDataSource,
-    private val offlineDataSource: OfflineDataSource,
-    private val cacheMapper: CacheMappers
+    private val offlineDataSource: OfflineDataSource
+//    private val cacheMapper: CacheMappers
 ) :AppDataRepository {
 
     override fun getCaching(

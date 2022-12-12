@@ -8,6 +8,7 @@ import com.bemotioninc.sss.MainActivity
 import com.bemotioninc.sss.constants.Constants
 import com.bemotioninc.sss.databinding.ActivitySplashBinding
 import com.bemotioninc.sss.presentation.base.BaseActivity
+import com.bemotioninc.sss.presentation.login.LoginActivity
 import com.bemotioninc.sss.utils.ResponseState
 import com.bemotioninc.sss.utils.observeInLifecycle
 import dagger.hilt.android.AndroidEntryPoint
@@ -36,7 +37,7 @@ class SplashActivity : BaseActivity() {
         viewModel.getCache.onEach {
             when (it) {
                 is ResponseState.Success -> {
-                    intent = Intent(this, MainActivity::class.java)
+                    intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                 }
                 is ResponseState.Failure -> {

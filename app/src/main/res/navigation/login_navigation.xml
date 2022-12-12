@@ -13,7 +13,12 @@
     <fragment
         android:id="@+id/registration"
         android:name="com.bemotioninc.sss.presentation.login.registration.RegistrationFragment"
-        android:label="ForGetPassWord"
-        tools:layout="@layout/fragment_registration"/>
+        android:label="registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/landingPage"
+        android:name="com.bemotioninc.sss.presentation.login.landingpage.LandingFragment"
+        android:label="landingPage"
+        tools:layout="@layout/fragment_landing" />
 
 </navigation>
